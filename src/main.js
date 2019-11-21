@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import biuLoading from './loading/index'
+import Loading from './loading/index'
 
-Vue.use(biuLoading,  {text: 'loading'})
+Vue.use(Loading,  {text: 'loading'}) // 全局的默认设置
 
 new Vue({
   el: '#app',

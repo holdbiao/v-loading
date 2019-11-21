@@ -8,7 +8,7 @@ let Instance = null
 const LoadingFn = (Options) => {
   return {
     show (options) {
-      let text = (options && options.text) || Options.text
+      let text = (options && options.text) || (Options && Options.text) || ''
       Instance = new LoadingConstructor({})
       Instance.vm = Instance.$mount() // 挂载
       document.body.appendChild(Instance.vm.$el)

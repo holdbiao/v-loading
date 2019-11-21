@@ -3,7 +3,7 @@
     <div class="biu-loading-cont" v-show="visible">
       <div class="biu-loading-main">
         <i class="biu-loading-icon"></i>
-        <p class="biu-text">{{text}}</p>
+        <p class="biu-text" v-show="text">{{text}}</p>
       </div>
     </div>
   </transition>
